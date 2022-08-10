@@ -2,7 +2,7 @@
 
 # Home Page
 
-<img src="Designs/Mood_tracker.png" alt="home-page" />
+<img src="Designs/Mood_tracker_design.png" alt="home-page" />
 
 # Bleed Page 
 
