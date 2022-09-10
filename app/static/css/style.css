@@ -37,3 +37,9 @@
   margin-left: -3px;
   top: 0;
 }
+
+.card {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 120px !important;
+}
