@@ -14,7 +14,7 @@
     <title>Teacher</title>
   </head>
   <body>
-    <nav class="navbar bg-light fixed-top">
+   <nav class="navbar bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Geno</a>
         <button
@@ -31,6 +31,7 @@
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
+          style="background-color: #e3f2fd"
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Geno</h5>
@@ -44,76 +45,91 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href=""
+                  >Fetures</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Role
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li>
-                    <hr class="dropdown-divider" />
+                    <a class="dropdown-item" href="teachers.html">Teacher</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Student</a></li>
                 </ul>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </div>
     </nav>
 
-    <button
-      type="button"
-      class="btn btn-primary"
-      style="margin-top: 70px; margin-left: 10px; width: 200px; height: 40px"
+ 
+
+    <div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" style="margin-top: 70px; margin-left: 10px; width: 200px; height: 40px"
     >
-      + Add Room
-    </button>
+    + Add Room
+  </button>
+  <form class="dropdown-menu p-4">
+    <div class="mb-3">
+      <label for="exampleDropdownFormEmail2" class="form-label">Room id</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="#VGEC001">
+    </div>
+    <div class="mb-3">
+      <label for="exampleDropdownFormPassword2" class="form-label">Create Password</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+        <label class="form-check-label" for="dropdownCheck2">
+          Remember me
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Room</button>
+  </form>
+</div>
+
+    <div class="roomid">
+      <h2>Current Room: #VGEC01</h2>
+    </div>
 
     <div>
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-            <a href="#" class="btn btn-primary" style="margin-left: 230px"
+          <h5 class="card-title">Student name: Mayur Asodara</h5>
+          <p>Student id: ECE001<br>
+          Happiness Score: 70.2%<br>
+            <a href="#" class="btn btn-primary" style="margin-left: 720px"
               >Button</a
             >
           </p>
+          
+            
+          
         </div>
       </div>
 
       <div>
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-            <a href="#" class="btn btn-primary" style="margin-left: 230px"
+          <h5 class="card-title ">Student name: Indrajeet Khatri</h5>
+          <p>Student id: ECE002<br>
+          Happiness Score: 70.2%<br>
+            <a href="#" class="btn btn-primary" style="margin-left: 720px"
               >Button</a
             >
           </p>
@@ -121,13 +137,12 @@
       </div>
     
     <div>
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-            <a href="#" class="btn btn-primary" style="margin-left: 230px"
+          <h5 class="card-title">Student name: Raj Rajput</h5>
+<p>Student id: ECE003<br>
+          Happiness Score: 70.2%<br>
+            <a href="#" class="btn btn-primary" style="margin-left: 720px"
               >Button</a
             >
           </p>
@@ -135,13 +150,12 @@
       </div></div>
 
       <div>
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-            <a href="#" class="btn btn-primary" style="margin-left: 230px"
+          <h5 class="card-title">Student name: Krishal Patel</h5>
+          <p>Student id: ECE004<br>
+          Happiness Score: 70.2%<br>
+            <a href="#" class="btn btn-primary" style="margin-left: 720px"
               >Button</a
             >
           </p>
@@ -149,13 +163,12 @@
       </div>
 
       <div>
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-            <a href="#" class="btn btn-primary" style="margin-left: 230px"
+          <h5 class="card-title">Student name: Akshit Kachhadiya</h5>
+          <p>Student id: ECE005<br>
+          Happiness Score: 70.2%<br>
+            <a href="#" class="btn btn-primary" style="margin-left: 720px"
               >Button</a
             >
           </p>
@@ -163,13 +176,12 @@
       </div>
 
       <div>
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-            <a href="#" class="btn btn-primary" style="margin-left: 230px"
+          <h5 class="card-title">Student name: Viral Parmar</h5>
+          <p>Student id: ECE006<br>
+          Happiness Score: 70.2%<br>
+            <a href="#" class="btn btn-primary" style="margin-left: 720px"
               >Button</a
             >
           </p>
@@ -177,13 +189,12 @@
       </div>
 
       <div>
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-            <a href="#" class="btn btn-primary" style="margin-left: 230px"
+          <h5 class="card-title">Student name: Karan Diwan</h5>
+          <p>Student id: ECE007<br>
+          Happiness Score: 70.2%<br>
+            <a href="#" class="btn btn-primary" style="margin-left: 720px"
               >Button</a
             >
           </p>
@@ -191,13 +202,12 @@
       </div>
 
       <div>
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-            <a href="#" class="btn btn-primary" style="margin-left: 230px"
+          <h5 class="card-title">Student name: Deven Desai</h5>
+          <p>Student id: ECE008<br>
+          Happiness Score: 70.2%<br>
+            <a href="#" class="btn btn-primary" style="margin-left: 720px"
               >Button</a
             >
           </p>
@@ -205,13 +215,12 @@
       </div>
 
       <div>
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-            <a href="#" class="btn btn-primary" style="margin-left: 230px"
+          <h5 class="card-title">Student name: Smit Gajera</h5>
+          <p>Student id: ECE009<br>
+          Happiness Score: 70.2%<br>
+            <a href="#" class="btn btn-primary" style="margin-left: 720px"
               >Button</a
             >
           </p>
