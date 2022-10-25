@@ -44,6 +44,7 @@
   display: grid;
   grid-gap: var(--square-gap);
   grid-template-rows: repeat(7, var(--square-size));
+  border-radius: 1px;
 }
 
 .squares {
@@ -57,7 +58,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 12px;
-  background-color: aliceblue;
+  background-color: #eef4ed;
 }
 
 .graph {
@@ -72,20 +73,29 @@ body {
 }
 
 .squares li {
-  background-color: red;
+  background-color: #ffffff;
   color: transparent;
+  border-radius: 2px;
 }
 
 .squares li[data-level="1"] {
-  background-color: green;
+  background-color: #ff6384;
 }
 
 .squares li[data-level="2"] {
-  background-color: yellow;
+  background-color: #ff9f40;
 }
 
 .squares li[data-level="3"] {
-  background-color: green;
+  background-color: #ffcd56;
+}
+
+.squares li[data-level="4"] {
+  background-color: #4bc0c0;
+}
+
+.squares li[data-level="5"] {
+  background-color: #36a2eb;
 }
 
 form {
@@ -179,4 +189,12 @@ input[type="reset"] {
 .container {
   margin-left: auto;
   margin-right: auto;
+}
+
+.addmood {
+  margin: 80px 25px;
+}
+
+.card {
+  justify-items: center;
 }
