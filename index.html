@@ -160,6 +160,7 @@
         </div>
       </div>
     </div>
+<div><span style="margin-left: 50px; font-weight:500; font-size:medium">Stats</span></div>
 
     <div class="graph" style="margin: auto auto">
       <ul class="months">
@@ -190,9 +191,22 @@
       </ul>
     </div>
 
-    <div class="chart" style="max-width: 600px; max-height: 600px">
-      <canvas id="myChart" aria-label="chart" role="img"></canvas>
+    
+     <div class="container text-center">
+  <div class="row">
+    <div class="col">
+         <canvas id="lineChart" aria-label="chart" role="img"></canvas>
     </div>
+    <div class="col">
+       <canvas id="myChart" aria-label="chart" role="img"></canvas>
+    </div>
+  </div> 
+  </div>
+
+     <div class="chart" style="max-width: 940px; max-height: 300px; margin-top: 50px; margin: 50px auto;">
+      <canvas id="mlChart" aria-label="chart" role="img"></canvas>
+    </div>
+
   </body>
   <script src="index.js"></script>
   <script src="chart.js"></script>
